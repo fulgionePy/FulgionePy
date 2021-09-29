@@ -1,0 +1,14 @@
+class dipinto:
+
+   def __init__(self, autore, anno, tecnica, dimensioni, nome):
+     self.autore = autore
+     self.anno = anno
+     self.tecnica = tecnica
+     self.dimensioni = dimensioni
+     self.nome = nome  
+   def scheda(self):
+        return f'\nautore {self.autore}\nanno: {self.anno}\ntecnica:{self.tecnica}\ndimensioni:{self.dimensioni}\nnome:{self.nome}'
+
+Gioconda= dipinto("Leonardo da Vinci","1503","olio su tela","77x53 cm","Gioconda")
+
+print(Gioconda.scheda())
